@@ -1,10 +1,40 @@
 {
+  "name": "solo_quasar",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "productName": "Quasar App",
+  "cordovaId": "",
+  "capacitorId": "",
+  "author": "Soloski123 <ahambasolomon800@gmail.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
   "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "axios": "^0.18.1",
     "connect-history-api-fallback": "^1.6.0",
     "express": "^4.17.1",
+    "quasar": "^1.0.0",
     "serve-static": "^1.14.1"
   },
+  "devDependencies": {
+    "@quasar/app": "^1.0.0",
+    "devtron": "^1.4.0",
+    "electron": "^7.0.0",
+    "electron-debug": "^3.0.0",
+    "electron-devtools-installer": "^2.2.4",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ],
   "build": "quasar build",
   "start": "node server.js",
-  "heroku-postbuild": "yarn && yarn build"
+  "heroku-postbuild": "npm && npm build"
 }
